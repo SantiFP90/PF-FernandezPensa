@@ -75,34 +75,38 @@ body{
 
 /*-----------------------------------------main------------------------------------*/
 
+#servtotal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
 .cajasmain {
-    margin: 10px;
-    text-align: justify;
-    background-color: rgba(34, 76, 189, 0.411);
+        background-color: rgba(165, 147, 42, 0.411);
+        width: 350px;
+        margin: 20px;
+        padding: 5px;
 }
 
 .cajasmain h2 {
     text-align: center;
-    margin-bottom: 5px;
-}
-
-.cajasmain p {
-    font-weight: 700;
-    font-size: medium;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 #servtotal section:hover {
     transform: scale(1.04);
     cursor: pointer;
 }
-
 /*------------------------------------fin main------------------------------------*/
 
 /*----------------------------------footer----------------------------------------*/
 footer {
     background-color: rgba(165, 147, 42, 0.411);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contacto{
