@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -13,8 +14,6 @@ body{
 /* ----------------------imagenes de heros y logos ---------------------*/
 
 .hero img{
-    width: 100%;
-    height: 75vh;
     padding-top: 10px;
 }
 
@@ -38,19 +37,11 @@ body{
 
 /* ----------------------header------------------------------------------------- */
 
-.navSuperior{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 .titulo {
     font-size: 3em;
     color: rgb(10, 15, 80);
     text-transform: uppercase;
     text-align: center;
-    text-align: left; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-weight:bold; 
 }
@@ -68,14 +59,8 @@ body{
     color: rgb(255, 255, 255)
 }
 
-
-.container-fluid {
-    justify-content: center;
-    align-items: center;
-}
-
 #botonera li {
-    margin: 5px 50px;
+    margin: 5px 30px;
     border: 4px solid rgb(32, 32, 209) ;
     background-color:  rgb(32, 32, 209);
     text-align: center;
@@ -91,12 +76,9 @@ body{
 /*-----------------------------------------main------------------------------------*/
 
 .cajasmain {
-    width: 25%;
-    height: 17rem;
     margin: 10px;
     text-align: justify;
     background-color: rgba(34, 76, 189, 0.411);
-    padding: 10px;
 }
 
 .cajasmain h2 {
@@ -107,16 +89,9 @@ body{
 .cajasmain p {
     font-weight: 700;
     font-size: medium;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
-#servtotal{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    transition: all 900ms;
-    position: relative;
-}   
 
 #servtotal section:hover {
     transform: scale(1.04);
@@ -128,10 +103,6 @@ body{
 /*----------------------------------footer----------------------------------------*/
 footer {
     background-color: rgba(165, 147, 42, 0.411);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
 }
 
 .contacto{
@@ -185,6 +156,7 @@ footer {
 
 .contenido {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -198,10 +170,11 @@ footer {
     align-items: center;
     background-color: rgba(165, 147, 42, 0.411);
     font-weight: 700;
+    margin: 5px;
 }
 
 .imgQS {
-    padding-left: 0.313rem;
+    margin-top: 5px;
 }
 
 .parrafoQS {
