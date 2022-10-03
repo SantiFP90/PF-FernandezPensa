@@ -5,8 +5,7 @@
 }
 
 body{
-    background: rgb(45,253,86);
-    background: linear-gradient(0deg, rgba(45,253,86,1) 0%, rgba(34,195,153,0.9640231092436975) 98%);
+    background-color: white;
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -19,7 +18,6 @@ body{
 
 .heroVacunas img{
     width: 100%;
-    height: 68vh;
 }
 
 #logo img {
@@ -39,11 +37,13 @@ body{
 
 .titulo {
     font-size: 3em;
-    color: rgb(10, 15, 80);
+    color: #1C6096;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-weight:bold; 
+    text-decoration: underline;
+    
 }
 
 /*  ------------------------------------fin header------------------------------ */
@@ -51,18 +51,19 @@ body{
 /*------------------------------------nav-----------------------------------------*/
 
 .bg-red {
-    background-color: rgba(165, 147, 42, 0.411);
+    background: rgb(251,251,251);
+    background: linear-gradient(90deg, rgba(251,251,251,1) 0%, rgba(28,96,150,1) 26%);
     font-weight: bold;
 }
 
 #botonera ul li a {
-    color: rgb(255, 255, 255)
+    color: rgb(8, 8, 8)
 }
 
 #botonera li {
     margin: 5px 30px;
-    border: 4px solid rgb(32, 32, 209) ;
-    background-color:  rgb(32, 32, 209);
+    border: 4px solid #EDEDED ;
+    background-color: #EDEDED ;
     text-align: center;
 }
 
@@ -84,15 +85,26 @@ body{
 }
 
 .cajasmain {
-        background-color: rgba(165, 147, 42, 0.411);
-        width: 350px;
-        margin: 20px;
-        padding: 5px;
+    background: rgb(16,187,39);
+    background: linear-gradient(0deg, rgba(16,187,39,1) 4%, rgba(60,100,155,1) 8%);
+    width: 350px;
+    margin: 20px;
+    padding: 5px;
 }
 
 .cajasmain h2 {
     text-align: center;
+    color: #EDEDED;
+    text-decoration: underline;
+    font-size: 3em;
 }
+
+.cajasmain p {
+    color: #EDEDED;
+    padding: 2px;
+    text-align: justify;
+}
+
 
 #servtotal section:hover {
     transform: scale(1.04);
@@ -102,11 +114,12 @@ body{
 
 /*----------------------------------footer----------------------------------------*/
 footer {
-    background-color: rgba(165, 147, 42, 0.411);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    background-image: url(../images/footer.jpg) ;
+    padding: 5px;
 }
 
 .contacto{
@@ -121,14 +134,13 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
     footer h3 {
-        color: rgb(10, 15, 80);
+        color:#1C6096;
         font-weight: 700
     }
     footer p {
-        color: rgb(5, 5, 5);
+        color: #1C6096;
         font-size: large;
         text-align: justify;
         font-weight: 700
@@ -151,7 +163,8 @@ footer {
     text-transform: uppercase;
     font-weight: bolder;
     margin-right: 10px;
-    
+    color: #1C6096;
+    padding-left: 90px;
 }
 
 /*-------------------------------fin footer----------------------------------------*/
@@ -162,7 +175,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0.625rem;
 }
@@ -172,24 +185,28 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(165, 147, 42, 0.411);
+    background-color: #3c709b;
     font-weight: 700;
     margin: 5px;
 }
 
 .imgQS {
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .parrafoQS {
     text-align: justify;
     padding: 0.313rem;
+    color: #EDEDED;
 }
 
 .titleQS {
     font-size: 2em;
     text-transform: uppercase;
     font-weight: 900;
+    color: #EDEDED;
 }
 
 /* ----------------------fin página quienesSomos---------------------------------- */
@@ -201,6 +218,7 @@ footer {
     font-size: 2em;
     text-transform: uppercase;
     font-weight: bolder;
+    color: #1C6096;
 }
 
 .pyg img {
@@ -214,7 +232,6 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(165, 147, 42, 0.411);
     margin: 0.625rem;
 }
     .caninoText {
@@ -225,18 +242,22 @@ footer {
         margin: 5px;
         padding: 3px;
         font-weight: 500;
+        color: #1C6096;
+        font-weight: 600;
     }
         .caninoText h2 {
             text-align: center;
             font-size: 2em;
             text-transform: uppercase;
             font-weight: bolder;
+            color: #1C6096;
         }
             .caninoText h3 {
                 text-align: center;
                 font-size: 1em;
                 text-transform: uppercase;
                 font-weight: bolder;
+                color: #1C6096 ;
             }
 
 
@@ -245,7 +266,6 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(165, 147, 42, 0.411);
     margin: 0.625rem;
 }
     .felinoText {
@@ -256,12 +276,15 @@ footer {
         margin: 5px;
         padding: 3px;
         font-weight: 500;
+        color: #1C6096;
+        font-weight: 600;
     }
         .felinoText h2 {
             text-align: center;
             font-size: 2em;
             text-transform: uppercase;
             font-weight: bolder;
+            color: #1C6096;
         }
 
 /* -------------------fin Guía Vacunas--------------------------------------------*/
@@ -272,9 +295,10 @@ footer {
 
 .tituloCF {
     font-size: 1.5em;
-    color: rgb(10, 15, 80);
+    color: #1C6096;
     text-transform: uppercase;
     text-align: center;
+    font-size: 2em;
 }
 
 .galeria {
@@ -303,25 +327,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(165, 147, 42, 0.411);
+    background-color: #3c709b;
 }
     .galeria figure:hover {
         transform: scale(1.04);
         transition: all 900ms;
         cursor: pointer;
     }
-
-/* -------------------- fin Pagina de Alimentos-------------------------------------- */
-
-/* respinsive header
-@media screen and (max-width: 500px){
-    .titulo {
-        font-size: 2em;
-        color: rgb(10, 15, 80);
-        text-transform: uppercase;
-        text-align: center;
-        text-align: left; 
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-        font-weight:bold; 
+    .galeria .prod figcaption {
+        color: #EDEDED;
+        font-weight: 600;
     }
-} */
+/* -------------------- fin Pagina de Alimentos-------------------------------------- */
