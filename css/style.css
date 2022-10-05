@@ -118,7 +118,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-image: url(../images/footer.jpg) ;
+    background-image: url(../images/footer.webp) ;
     padding: 5px;
 }
 
@@ -284,6 +284,7 @@ footer {
     text-transform: uppercase;
     text-align: center;
     font-size: 2em;
+    margin: 5px;
 }
 .galeria {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -341,8 +342,7 @@ footer {
     flex-direction: column;
     align-items: center;
     background-color: #3c709b;
-    width: 300px;
-    height: auto;
+
 }
     .galeria figure:hover {
         transform: scale(1.04);
@@ -355,46 +355,8 @@ footer {
     }
 
     .galeria figure img{
-        width: 250px;
+        width: 240px;
         height: auto;
     }
 
-
-/* .galeria {
-    display: grid;
-    grid-template-columns: 400px auto auto auto;
-    grid-template-rows: 50% 50%;
-    row-gap: 10px;
-    column-gap: 90px;
-    margin: 30px;
-}
-
-.vertical {
-    grid-row: 1 / 3 ;
-}
-    .vertical img {
-        height: 600px;
-        width: auto;
-    }
-
-.prod img {
-    height: 250px;
-    width: auto;
-}
-
-.galeria figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #3c709b;
-}
-    .galeria figure:hover {
-        transform: scale(1.04);
-        transition: all 900ms;
-        cursor: pointer;
-    }
-    .galeria .prod figcaption {
-        color: #EDEDED;
-        font-weight: 600;
-    } */
 /* -------------------- fin Pagina de Alimentos-------------------------------------- */
