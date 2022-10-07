@@ -360,7 +360,7 @@ footer {
     }
 
 /* -----------------------@media p/tablet y p/movile------------------------------------ */
-@media all and (min-width: 700px) and (max-width:1023px){
+@media all and (min-width: 700px) and (max-width:1024px){
     .tituloCF {
         font-size: 1.5em;
         color: #1C6096;
@@ -382,6 +382,13 @@ footer {
             ' producto4 producto5 producto6'
     } 
     
+    .imgVertical {
+        grid-area: imgVertical;
+        height: 800px;
+        width: auto;
+        display: none;
+    }
+
     .producto1 {
         grid-area: producto1;
     }
@@ -441,9 +448,24 @@ footer {
         font-size: 2em;
         margin: 5px;
     }
+
+    .imgVertical {
+        grid-area: imgVertical;
+        height: 800px;
+        width: auto;
+        display: none;
+    }
+
     .galeria {  display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        grid-template-areas:
+        'producto1'
+        'pruducto2'
+        'producto3'
+        'producto4'
+        'producto5'
+        'producto6'
     }
 
 }
