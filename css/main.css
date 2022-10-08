@@ -1,0 +1,407 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ---------------------- hero ---------------------*/
+.hero img {
+  padding-top: 10px;
+}
+
+/* --------------------- hero --------------------------- */
+/* ----------------------header------------------------------------------------- */
+.titulo {
+  font-size: 3em;
+  color: #1C6096;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*  ---------------------fin header--------------------------------------------- */
+/*------------------------------------nav-----------------------------------------*/
+.bg-red {
+  background: rgb(251, 251, 251);
+  background: linear-gradient(90deg, rgb(251, 251, 251) 0%, rgb(28, 96, 150) 26%);
+  font-weight: bold;
+}
+
+nav #logo img {
+  width: 8rem;
+  height: auto;
+}
+nav #logo img:hover {
+  transform: rotateZ(360deg);
+  cursor: pointer;
+  transition: all 700ms;
+}
+
+#botonera ul :hover {
+  transform: scale(1.09);
+  transition: all 400ms;
+}
+#botonera ul li {
+  margin: 5px 30px;
+  border: 4px solid #EDEDED;
+  background-color: #EDEDED;
+  text-align: center;
+}
+#botonera ul li a {
+  color: black;
+}
+
+/*---------------------------------------- fin nav--------------------------- */
+/*-----------------------------------------main------------------------------------*/
+#servtotal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: stretch;
+}
+#servtotal section:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.cajasmain {
+  background: rgb(13, 200, 94);
+  background: linear-gradient(0deg, rgb(13, 200, 94) 0%, rgb(60, 100, 155) 22%);
+  width: 350px;
+  margin: 20px;
+  padding: 5px;
+}
+.cajasmain h2 {
+  text-align: center;
+  color: #EDEDED;
+  text-decoration: underline;
+  font-size: 3em;
+}
+.cajasmain p {
+  color: #EDEDED;
+  padding: 2px;
+  text-align: justify;
+}
+
+/*------------------------------------fin main------------------------------------*/
+/*----------------------------------footer----------------------------------------*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../images/footer.webp);
+  padding: 5px;
+}
+footer h3 {
+  color: #1C6096;
+  font-weight: 700;
+}
+footer p {
+  color: #1C6096;
+  font-size: large;
+  text-align: center;
+  font-weight: 700;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.siguenos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.siguenos img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.siguenos p {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-right: 10px;
+  color: #1C6096;
+  padding-left: 90px;
+}
+
+.mapa iframe {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+/*-------------------------------fin footer----------------------------------------*/
+/* --------------------------página quienesSomos---------------------------------- */
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem;
+}
+
+.textoQS {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c709b;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.imgQS {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.parrafoQS {
+  text-align: justify;
+  padding: 0.313rem;
+  color: #EDEDED;
+}
+
+.titleQS {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #EDEDED;
+}
+
+/* ----------------------fin página quienesSomos---------------------------------- */
+/* ----------------------Guía Vacunas-------------------------------------------- */
+.titleVacunas {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #1C6096;
+}
+
+.heroVacunas img {
+  width: 100%;
+}
+
+.pyg img {
+  width: 53.125rem;
+}
+
+.canino {
+  margin: 0.625rem;
+  text-align: center;
+}
+
+.caninoText {
+  text-align: justify;
+  margin: 5px;
+  font-weight: 500;
+  color: #1C6096;
+  font-weight: 600;
+}
+.caninoText h2 {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #1C6096;
+}
+.caninoText h3 {
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #1C6096;
+}
+
+.felino {
+  margin: 0.625rem;
+  text-align: center;
+}
+
+.felinoText {
+  text-align: justify;
+  margin: 5px;
+  font-weight: 500;
+  color: #1C6096;
+  font-weight: 600;
+}
+.felinoText h2 {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #1C6096;
+}
+
+/* -------------------fin Guía Vacunas--------------------------------------------*/
+/* ---------------------Pagina de Alimentos-------------------------------------- */
+/* Caninos y felinos */
+.tituloCF {
+  font-size: 1.5em;
+  color: #1C6096;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  margin: 5px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: auto;
+  gap: 0.938rem 0.938rem;
+  height: 90vh;
+  align-items: center;
+  margin: 20px;
+  grid-template-areas: "imgVertical producto1 pruducto2 producto3" "imgVertical producto4 producto5 producto6";
+}
+
+.imgVertical {
+  grid-area: imgVertical;
+  height: 50rem;
+  width: auto;
+}
+.imgVertical img {
+  width: 100%;
+  height: 100%;
+}
+
+.producto1 {
+  grid-area: producto1;
+}
+
+.pruducto2 {
+  grid-area: pruducto2;
+}
+
+.producto3 {
+  grid-area: producto3;
+}
+
+.producto4 {
+  grid-area: producto4;
+}
+
+.producto5 {
+  grid-area: producto5;
+}
+
+.producto6 {
+  grid-area: producto6;
+}
+
+.galeria figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3c709b;
+}
+.galeria figure:hover {
+  transform: scale(1.04);
+  transition: all 900ms;
+  cursor: pointer;
+}
+.galeria figure figcaption {
+  color: #EDEDED;
+  font-weight: 600;
+}
+.galeria figure img {
+  width: 15rem;
+  height: auto;
+}
+
+/* -----------------------@media p/tablet y p/movile------------------------------------ */
+@media all and (min-width: 700px) and (max-width: 1024px) {
+  .tituloCF {
+    font-size: 1.3em;
+    color: #1C6096;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    margin: 5px;
+  }
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: auto;
+    gap: 15px 15px;
+    height: 90vh;
+    align-items: center;
+    margin: 20px;
+    grid-template-areas: " producto1 pruducto2 producto3" " producto4 producto5 producto6";
+  }
+  .imgVertical {
+    grid-area: imgVertical;
+    height: 37.5rem;
+    width: auto;
+    display: none;
+  }
+  .galeria figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3c709b;
+  }
+  .galeria figure:hover {
+    transform: scale(1.03);
+    transition: all 900ms;
+    cursor: pointer;
+  }
+  .galeria figure figcaption {
+    color: #EDEDED;
+    font-weight: 600;
+  }
+  .galeria figure img {
+    width: 14.563rem;
+    height: auto;
+  }
+}
+@media all and (max-width: 699px) and (min-width: 220px) {
+  .tituloCF {
+    font-size: 0.8em;
+    color: #1C6096;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    margin: 5px;
+  }
+  .imgVertical {
+    grid-area: imgVertical;
+    height: 50rem;
+    width: auto;
+    display: none;
+  }
+  .galeria {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "producto1" "pruducto2" "producto3" "producto4" "producto5" "producto6";
+  }
+}
+/* fin Caninos y felinos */
+/* -------------------- fin Pagina de Alimentos-------------------------------------- */
+
+/*# sourceMappingURL=main.css.map */

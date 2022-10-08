@@ -1,0 +1,241 @@
+//Imports
+@import "_vars";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $colorFondo;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ---------------------- hero ---------------------*/
+.hero {
+    img{
+        padding-top: 10px;
+    }
+}
+
+/* --------------------- hero --------------------------- */
+
+/* ----------------------header------------------------------------------------- */
+.titulo {
+    font-size: 3em;
+    color: $colorTitulos;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*  ---------------------fin header--------------------------------------------- */
+
+/*------------------------------------nav-----------------------------------------*/
+
+.bg-red {
+    background: rgb(251,251,251);
+    background: linear-gradient(90deg, rgba(251,251,251,1) 0%, rgba(28,96,150,1) 26%);
+    font-weight: bold;
+}
+
+nav{
+        #logo {
+                img {
+                    width: 8rem;
+                    height: auto;
+                        :hover {
+                            transform: rotateZ(360deg);
+                            cursor: pointer;
+                            transition: all 700ms;
+                        }
+                }
+            }
+}
+
+#botonera {
+    ul {
+        :hover {
+            transform: scale(1.09);
+            transition: all 400ms;
+        }
+        li {
+            margin: 5px 30px;
+            border: 4px solid $colorLetras;
+            background-color: $colorLetras;
+            text-align: center;
+                a {
+                    color: black;
+                }
+        }
+    }
+}
+
+/*---------------------------------------- fin nav--------------------------- */
+
+/*-----------------------------------------main------------------------------------*/
+#servtotal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: stretch;
+        section:hover {
+            transform: scale(1.04);
+            cursor: pointer;
+        }
+}
+
+.cajasmain {
+    background: rgb(13,200,94);
+    background: linear-gradient(0deg, rgba(13,200,94,1) 0%, rgba(60,100,155,1) 22%);
+    width: 350px;
+    margin: 20px;
+    padding: 5px;
+        h2 {
+            text-align: center;
+            color: $colorLetras;
+            text-decoration: underline;
+            font-size: 3em;
+        }
+        p {
+            color: $colorLetras;
+            padding: 2px;
+            text-align: justify;
+        }
+}
+
+/*------------------------------------fin main------------------------------------*/
+
+/*----------------------------------footer----------------------------------------*/
+
+@import "_footer";
+
+/*-------------------------------fin footer----------------------------------------*/
+
+/* --------------------------página quienesSomos---------------------------------- */
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem;
+}
+
+.textoQS {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorSec;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.imgQS {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.parrafoQS {
+    text-align: justify;
+    padding: 0.313rem;
+    color: $colorLetras;
+}
+
+.titleQS {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $colorLetras;
+}
+
+/* ----------------------fin página quienesSomos---------------------------------- */
+
+/* ----------------------Guía Vacunas-------------------------------------------- */
+
+.titleVacunas {
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: $colorTitulos;
+}
+
+.heroVacunas {
+        img {
+                width: 100%;
+        }
+}
+
+
+.pyg {
+        img {
+            width: 53.125rem;
+        }
+}
+
+.canino {
+    margin: 0.625rem;
+    text-align: center;
+}
+
+.caninoText {
+    text-align: justify;
+    margin: 5px;
+    font-weight: 500;
+    color: $colorTitulos;
+    font-weight: 600;
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: $colorTitulos;
+        }
+        h3 {
+            text-align: center;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: $colorTitulos;
+        }
+}
+
+.felino {
+    margin: 0.625rem;
+    text-align: center;
+}
+
+.felinoText {
+    text-align: justify;
+    margin: 5px;
+    font-weight: 500;
+    color: $colorTitulos;
+    font-weight: 600;
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: $colorTitulos;
+        }
+}
+
+/* -------------------fin Guía Vacunas--------------------------------------------*/
+
+/* ---------------------Pagina de Alimentos-------------------------------------- */
+/* Caninos y felinos */
+
+@import "_caninosYFelinos";
+
+/* fin Caninos y felinos */
+/* -------------------- fin Pagina de Alimentos-------------------------------------- */
+
+

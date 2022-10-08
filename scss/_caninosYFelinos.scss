@@ -1,0 +1,168 @@
+.tituloCF {
+    font-size: 1.5em;
+    color: $colorTitulos;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    margin: 5px;
+}
+
+.galeria {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: auto;
+    gap: 0.938rem 0.938rem;
+    height: 90vh;
+    align-items: center;
+    margin: 20px;
+    grid-template-areas:
+        "imgVertical producto1 pruducto2 producto3"
+        "imgVertical producto4 producto5 producto6";
+}
+
+.imgVertical {
+    grid-area: imgVertical;
+    height: 50rem;
+    width: auto;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+}
+
+.producto1 {
+    grid-area: producto1;
+}
+
+.pruducto2 {
+    grid-area: pruducto2;
+
+}
+
+.producto3 {
+    grid-area: producto3;
+
+}
+
+.producto4 {
+    grid-area: producto4;
+}
+
+.producto5 {
+    grid-area: producto5;
+}
+
+.producto6 {
+    grid-area: producto6;
+}
+
+.galeria {
+        figure{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $colorSec;
+                :hover {
+                    transform: scale(1.04);
+                    transition: all 900ms;
+                    cursor: pointer;
+                }
+                figcaption {
+                    color: $colorLetras;
+                    font-weight: 600;
+                }
+            img {
+                width: 15rem;
+                height: auto;
+            }
+        }
+}
+
+/* -----------------------@media p/tablet y p/movile------------------------------------ */
+
+@media all and (min-width: 700px) and (max-width:1024px){
+
+    .tituloCF {
+        font-size: 1.3em;
+        color: $colorTitulos;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2em;
+        margin: 5px;
+    }
+
+    .galeria {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: auto;
+        gap: 15px 15px;
+        height: 90vh;
+        align-items: center;
+        margin: 20px;
+        grid-template-areas:
+            ' producto1 pruducto2 producto3'
+            ' producto4 producto5 producto6'
+    } 
+    
+    .imgVertical {
+        grid-area: imgVertical;
+        height: 37.5rem;
+        width: auto;
+        display: none;
+    }
+
+    .galeria {
+            figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: $colorSec;
+                    &:hover{
+                        transform: scale(1.03);
+                        transition: all 900ms;
+                        cursor: pointer;
+                    }
+                    figcaption {
+                        color: $colorLetras;
+                        font-weight: 600;
+                    }
+                    img {
+                        width: 14.563rem;
+                        height: auto;
+                    }
+            }
+    }
+}
+
+@media all and (max-width: 699px) and (min-width: 220px) {
+
+    .tituloCF {
+        font-size: 0.8em;
+        color: $colorTitulos;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2em;
+        margin: 5px;
+    }
+
+    .imgVertical {
+        grid-area: imgVertical;
+        height: 50rem;
+        width: auto;
+        display: none;
+    }
+
+    .galeria {  display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'producto1'
+        'pruducto2'
+        'producto3'
+        'producto4'
+        'producto5'
+        'producto6'
+    }
+
+}

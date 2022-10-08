@@ -1,0 +1,24 @@
+{
+  "name": "coderproyecto",
+  "version": "1.0.0",
+  "description": "Proyecto de CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+    "sass":"sass" ,
+    "sass:watch": "sass --watch scss/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiFP90/PreEntrega2-FernandezPensa.git"
+  },
+  "author": "Santiago Fernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantiFP90/PreEntrega2-FernandezPensa/issues"
+  },
+  "homepage": "https://github.com/SantiFP90/PreEntrega2-FernandezPensa#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
