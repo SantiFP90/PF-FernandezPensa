@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +9,7 @@
 body {
   background-color: rgb(255, 255, 255);
   font-size: medium;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ---------------------- hero ---------------------*/
@@ -23,7 +24,7 @@ body {
   color: #1C6096;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -40,7 +41,7 @@ nav #logo img {
   width: 8rem;
   height: auto;
 }
-nav #logo img:hover {
+nav #logo img :hover {
   transform: rotateZ(360deg);
   cursor: pointer;
   transition: all 700ms;
@@ -95,6 +96,10 @@ nav #logo img:hover {
 
 /*------------------------------------fin main------------------------------------*/
 /*----------------------------------footer----------------------------------------*/
+html {
+  height: 100%;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -102,6 +107,7 @@ footer {
   justify-content: space-between;
   background-image: url(../images/footer.webp);
   padding: 5px;
+  margin-top: auto;
 }
 footer h3 {
   color: #1C6096;
@@ -110,7 +116,6 @@ footer h3 {
 footer p {
   color: #1C6096;
   font-size: large;
-  text-align: center;
   font-weight: 700;
 }
 
@@ -118,7 +123,7 @@ footer p {
   display: flex;
   flex-direction: column;
   text-align: left;
-  justify-content: center;
+  justify-content: flex-start;
   margin-left: 10px;
 }
 
@@ -167,6 +172,7 @@ footer p {
   background-color: #3c709b;
   font-weight: 700;
   margin: 5px;
+  padding: 40px;
 }
 
 .imgQS {
@@ -311,13 +317,16 @@ footer p {
   grid-area: producto6;
 }
 
+.galeria {
+  height: auto;
+}
 .galeria figure {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #3c709b;
 }
-.galeria figure:hover {
+.galeria figure :hover {
   transform: scale(1.04);
   transition: all 900ms;
   cursor: pointer;

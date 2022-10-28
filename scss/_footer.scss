@@ -1,3 +1,6 @@
+html{
+    height: 100%;
+}
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -5,6 +8,7 @@ footer {
     justify-content: space-between;
     background-image: url(../images/footer.webp) ;
     padding: 5px;
+    margin-top: auto;
         h3 {
             color: $colorTitulos;
             font-weight: 700;
@@ -12,7 +16,6 @@ footer {
         p {
             color: $colorTitulos;
             font-size: large;
-            text-align: center;
             font-weight: 700;
         }
 }
@@ -21,7 +24,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: left;
-    justify-content: center;
+    justify-content: flex-start;
     margin-left: 10px;
 }
 
