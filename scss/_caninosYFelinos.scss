@@ -63,7 +63,7 @@
             flex-direction: column;
             align-items: center;
             background-color: $colorSec;
-                :hover {
+                &:hover {
                     transform: scale(1.04);
                     transition: all 900ms;
                     cursor: pointer;

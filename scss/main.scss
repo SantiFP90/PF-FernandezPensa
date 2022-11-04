@@ -48,7 +48,7 @@ nav{
                 img {
                     width: 8rem;
                     height: auto;
-                        :hover {
+                        &:hover {
                             transform: rotateZ(360deg);
                             cursor: pointer;
                             transition: all 700ms;
@@ -58,21 +58,21 @@ nav{
 }
 
 #botonera {
-    ul {
-        :hover {
-            transform: scale(1.09);
-            transition: all 400ms;
+        ul {
+            :hover {
+                transform: scale(1.09);
+                transition: all 400ms;
+            }
+            li {
+                margin: 5px 30px;
+                border: 4px solid $colorLetras;
+                background-color: $colorLetras;
+                text-align: center;
+                    a {
+                        color: black;
+                    }
+            }
         }
-        li {
-            margin: 5px 30px;
-            border: 4px solid $colorLetras;
-            background-color: $colorLetras;
-            text-align: center;
-                a {
-                    color: black;
-                }
-        }
-    }
 }
 
 /*---------------------------------------- fin nav--------------------------- */
@@ -87,6 +87,7 @@ nav{
         section:hover {
             transform: scale(1.04);
             cursor: pointer;
+            transition: all 900ms;
         }
 }
 
@@ -239,5 +240,26 @@ nav{
 
 /* fin Caninos y felinos */
 /* -------------------- fin Pagina de Alimentos-------------------------------------- */
+
+/* -------------------- Flecha up-------------------------------------- */
+
+.fa-circle-up{
+    font-size: 2em;
+    color: black;
+    position: fixed;
+    cursor: pointer;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    transition: all 300ms ease;
+    &:hover{
+        transform: scale(1.3);
+        @media (max-width: 425px){
+            font-size: 1.3em;
+        }
+    }
+}
+
 
 
